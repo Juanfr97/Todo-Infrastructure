@@ -114,7 +114,7 @@ resource "null_resource" "adidas_copy_folder" {
   connection {
     type = "ssh"
     user = "root"
-    private_key = file("./keys/do_server")
+    private_key = file("./keys/juan_server")
     host = digitalocean_droplet.juan_server_droplet.ipv4_address
   }
 }
