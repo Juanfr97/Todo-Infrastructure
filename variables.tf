@@ -7,7 +7,7 @@ variable "MYSQL_DB" {
 }
 
 variable "MYSQL_HOST" {
- type= string 
+  type = string
 }
 
 variable "MYSQL_PASSWORD" {
