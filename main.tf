@@ -106,18 +106,18 @@ resource "digitalocean_droplet" "juan_server_droplet" {
 #   }
 # }
 # # Copiar carpeta adidas a servidor
-# resource "null_resource" "adidas_copy_folder" {
-#   provisioner "file" {
-#     source = "./adidas"
-#     destination = "/adidas"
-#   }
-#   connection {
-#     type = "ssh"
-#     user = "root"
-#     private_key = file("./keys/do_server")
-#     host = digitalocean_droplet.juan_server_droplet.ipv4_address
-#   }
-# }
+resource "null_resource" "adidas_copy_folder" {
+  provisioner "file" {
+    source = "./adidas"
+    destination = "/adidas"
+  }
+  connection {
+    type = "ssh"
+    user = "root"
+    private_key = file("./keys/do_server")
+    host = digitalocean_droplet.juan_server_droplet.ipv4_address
+  }
+}
 # # 1. Hacer cd /
 # # 2. docker cp adidas/. Adidas:/usr/share/nginx/html
 
