@@ -1,0 +1,16 @@
+adidas
+containers
+docker-install.sh
+keys
+main.tf
+terraform.tfvars
+texto.txt
+variables.tf
+adidas
+containers
+docker-install.sh
+keys
+main.tf
+terraform.tfvars
+texto.txt
+variables.tf
